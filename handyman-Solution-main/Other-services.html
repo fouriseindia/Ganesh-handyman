@@ -1,0 +1,739 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+
+    <!--====== Title ======-->
+    <title>Other Services | Handyman Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== Slick slider CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-logo {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the logo towards the top */
+            justify-content: center;
+            /* Center align the logo horizontally */
+        }
+
+        .menu-logo img {
+            margin-top: -40px;
+            /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px;
+            /* Increase the width of the image */
+            height: 135px;
+            /* Increase the height of the image */
+        }
+
+        main {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .phone-number {
+        color: #fff; /* Replace #ff00ff with your desired color code */
+    }
+    /* Hero Section */
+    .hero {
+  background: url('./assets/images/steps/balck-bg.png') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white; /* This will apply to all text inside the hero section */
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease-in-out;
+  color: white; /* Ensuring h1 is white */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1.2s ease-in-out;
+  color: white; /* Ensuring p is white */
+}
+
+
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1rem;
+      background-color: #ff9900;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .cta-button:hover {
+      background-color: #ff7700;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .services p {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      color: #777;
+      animation: fadeInUp 1.1s ease-in-out;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 20px;
+      background-color: #ff9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .learn-more-btn:hover {
+      background-color: #ff7700;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+      padding: 60px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .how-it-works h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .how-it-works-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .step {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      text-align: center;
+      animation: fadeInUp 1.4s ease-in-out;
+    }
+
+    .step img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .step h4 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .step p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Call to Action Section */
+    .cta-section {
+      background-color: #ff9900;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-section .cta-button {
+      background-color: white;
+      color: #ff9900;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+    }
+
+    .cta-section .cta-button:hover {
+      background-color: #ffd27f;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area header_style_2">
+
+        <div class="header-menu-area d-none d-lg-block">
+
+
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +352-226-9605</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 37613 Harwood Ave, Zephyrhills Florida 33541</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo">
+                                <a class="logo" href="index.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                            <li><a href="Other-services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+
+            </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a>
+                    </div> <!-- mobile logo -->
+
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div> <!-- header mobile menu -->
+
+    </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/index.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="Other-services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="why-choose-us.html">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- Main Section started -->
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Explore Our Additional Handyman Services</h1>
+            <p>From painting to plumbing, we've got you covered!</p>
+            <a href="#services-section" class="cta-button">See All Services</a>
+          </div>
+        </section>
+      
+        <!-- Services Section -->
+        <section id="services-section" class="services">
+          <h2>Our Additional Services</h2>
+          <p>We offer a variety of services to meet all your home repair needs.</p>
+          <div class="service-grid">
+            <div class="service-card">
+              <img src="./assets/images/other/eletrical.webp" alt="Electrical">
+              <h3>Electrical Services</h3>
+              <p>Professional electrical repairs and installations.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="service-card">
+              <img src="./assets/images/other/deck-reapir.jpeg" alt="Painting">
+              <h3>Deck Repair</h3>
+              <p>Freshen up your home with expert Deck Repair.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="service-card">
+              <img src="./assets/images/other/Carpenter.jpg" alt="Carpentry">
+              <h3>Carpentry Services</h3>
+              <p>High-quality carpentry solutions for all your needs.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+        </section>
+      
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+          <h2>How It Works</h2>
+          <div class="how-it-works-steps">
+            <div class="step">
+              <img src="./assets/images/steps/step 1.png" alt="Step 1">
+              <h4>Step 1</h4>
+              <p>Contact us for your service needs.</p>
+            </div>
+            <div class="step">
+              <img src="./assets/images/steps/step 2.png" alt="Step 2">
+              <h4>Step 2</h4>
+              <p>Schedule an appointment with our professionals.</p>
+            </div>
+            <div class="step">
+              <img src="./assets/images/steps/step 3.png" alt="Step 3">
+              <h4>Step 3</h4>
+              <p>Get quality services delivered at your doorstep.</p>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>Ready to Book a Service?</h2>
+            <p>Contact us today and let our professionals handle the rest!</p>
+            <button class="cta-button" onclick="location.href='contact.html'">Book Now</button>
+          </section>
+          
+      
+    </main>
+
+    <!-- Main Section endeed -->
+
+    <footer class="footer-area footer_style2">
+      <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                          <div class="footer-logo" style="display: flex; align-items: center; ">
+                              <!-- Flex container for logo and text -->
+                              <div class="img-fluid"
+                                  style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                  <!-- Set margin to 0 for alignment -->
+                                  <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                              </div>
+                              <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                  <!-- Adjust margin for spacing between logo and text -->
+                                  <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                      Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                              </div>
+                          </div>
+
+                          <ul>
+                              <li>
+                                  <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                      <!-- Reduced padding top, bottom, and left -->
+                                      <p>Ganesh Handyman Service provides quick,<br> reliable home repairs and
+                                          maintenance, <br> including plumbing, electrical work, <br> painting, and more.
+                                          Quality work, every time.</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="single-address py-2 d-flex">
+                                      <div class="address-icon">
+                                          <i class="flaticon-phone-call"></i>
+                                      </div>
+                                      <div class="address-content media-body">
+                                          <p class="text">37613 Harwood Ave, Zephyrhills Florida 33541</p>
+                                      </div>
+                                  </div> <!-- single address -->
+                              </li>
+                              <li>
+                                  <div class="single-address d-flex">
+                                      <div class="address-icon">
+                                          <i class="flaticon-placeholder"></i>
+                                      </div>
+                                      <div class="address-content media-body">
+                                        <p class="phone-number">+1 (352) 226-9605</p>
+                                      </div>
+                                  </div> <!-- single address -->
+                              </li>
+                              <li>
+                                  <div class="single-address d-flex">
+                                      <div class="address-icon">
+                                          <i class="flaticon-email"></i>
+                                      </div>
+                                      <div class="address-content media-body">
+                                          <p class="text">ganesh.hsolutions@gmail.com</p>
+                                      </div>
+                                  </div> <!-- single address -->
+                              </li>
+                          </ul>
+                      </div> <!-- footer address -->
+                  </div>
+
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+                      <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                          <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                          <ul>
+                              <li><a href="index.html"><i class="icofont-rounded-right"></i>Home</a></li>
+                              <li><a href="cleaning.html"><i class="icofont-rounded-right"></i>Services</a></li>
+                              <li><a href="why-choose-us.html"><i class="icofont-rounded-right"></i>Why Choose Us</a>
+                              </li>
+                              <li><a href="contact.html"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                          </ul>
+                      </div> <!-- footer link -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                          <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                          <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                              <ul>
+                                  <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                              class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                  <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                              class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                  <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                              class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                  <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                              class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                              </ul>
+                          </div>
+                      </div> <!-- footer Instagram Feeds -->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                          <h4 class="footer-title mb-15">About Us</h4> <!-- Fixed typo and reduced margin bottom -->
+
+                          <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                            <p>At our handyman service company, we provide a wide range of reliable solutions to
+                              keep your home or business in top shape. From thorough cleaning and drywall repair
+                              to professional painting and custom-built rustic pergolas, our skilled team is here
+                              to handle it all. We also offer comprehensive maintenance services and are always
+                              ready to take on unique projects tailored to your needs. Trust us to deliver
+                              quality, convenience, and expertise with every job.</p>
+                          </div>
+                          <script>
+                              document.getElementById('subscriptionForm').addEventListener('submit', function (event) {
+                                  event.preventDefault(); // Prevent the form from reloading the page
+
+                                  // Get the email value
+                                  var email = document.getElementById('emailInput').value;
+
+                                  // Print the email in the console
+                                  console.log("Subscribed email:", email);
+
+                                  // Display success message
+                                  document.getElementById('message').style.display = 'block';
+
+                                  // Show an alert message
+                                  alert("Subscribed successfully");
+
+                                  // Clear the input field after subscription
+                                  document.getElementById('emailInput').value = '';
+                              });
+                          </script>
+
+                      </div> <!-- footer link -->
+                  </div>
+              </div> <!-- row -->
+          </div> <!-- container -->
+      </div> <!-- footer widget -->
+
+      <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+          <div class="container">
+              <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                  <div class="copyright text-center">
+                      <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                              href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                  </div> <!-- copyright -->
+                  <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                      <div class="social-icons">
+                          <ul>
+                              <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                              <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                              <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                              <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                          </ul>
+                      </div>
+                  </div> <!-- payment -->
+              </div> <!-- copyright payment -->
+          </div> <!-- container -->
+      </div> <!-- footer copyright -->
+  </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top back-blue"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        // Function to move the carousel to the current image
+        function updateCarousel() {
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        // Event listeners for buttons
+        nextBtn.addEventListener('click', () => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) counter = images.length;
+            counter--;
+            updateCarousel();
+        });
+
+        // Optional: Auto-slide the carousel every 3 seconds
+        setInterval(() => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        }, 3000);
+        $(function () {
+    // Fade in the image on page load
+    $('.fade-in-image').fadeIn(1500); // Adjust duration (1500ms) as needed
+});
+
+    </script>
+
+</body>
+
+</html>
